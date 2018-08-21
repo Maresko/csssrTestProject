@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [csssr.TestRunner]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="csssr.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="teardownBrowser"/>
+          <include name="scenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- csssr.TestRunner -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [csssr.TestRunner] -->

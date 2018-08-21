@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: csssr.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 5.543 sec <<< FAILURE!
+scenario(csssr.TestRunner)  Time elapsed: 4.469 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at csssr.Steps.checkThatElementStatusOfCheckbox(Steps.java:17)
+	at ✽.check that checkbox is on(src/test/java/csssr/oneCase.feature:10)
+

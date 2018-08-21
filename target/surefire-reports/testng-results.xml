@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+    <line>
+      <![CDATA[<div "result">open Chrome browser (PASSED : 2s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">open page &quot;http:&#x2F;&#x2F;blog.csssr.ru&#x2F;qa-engineer&#x2F;&quot; (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">click element &quot;НАХОДИТЬ НЕСОВЕРШЕНСТВА&quot; on &quot;job page&quot; page (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">click element &quot;Чувство прекрасного&quot; on &quot;job page&quot; page (PASSED : 1s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">click element &quot;Чувство прекрасного&quot; on &quot;job page&quot; page (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">check that checkbox is on (FAILED : 0s)</div>]]>
+    </line>
+  </reporter-output>
+  <suite name="csssr.TestRunner" duration-ms="5150" started-at="2018-08-21T16:18:00Z" finished-at="2018-08-21T16:18:05Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="TestRunner.scenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:csssr.TestRunner@13a57a3b]" name="scenario" class="csssr.TestRunner"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Command line test" duration-ms="5150" started-at="2018-08-21T16:18:00Z" finished-at="2018-08-21T16:18:05Z">
+      <class name="csssr.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:csssr.TestRunner@13a57a3b]" name="setUpClass" is-config="true" duration-ms="215" started-at="2018-08-21T23:18:00Z" finished-at="2018-08-21T23:18:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="scenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:csssr.TestRunner@13a57a3b]" name="scenario" duration-ms="4463" started-at="2018-08-21T23:18:00Z" description="Runs Cucumber Feature" data-provider="scenarios" finished-at="2018-08-21T23:18:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["checkin checkbox"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["test feature"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at csssr.Steps.checkThatElementStatusOfCheckbox(Steps.java:17)
+	at ✽.check that checkbox is on(src/test/java/csssr/oneCase.feature:10)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">open Chrome browser (PASSED : 2s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">open page &quot;http:&#x2F;&#x2F;blog.csssr.ru&#x2F;qa-engineer&#x2F;&quot; (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">click element &quot;НАХОДИТЬ НЕСОВЕРШЕНСТВА&quot; on &quot;job page&quot; page (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">click element &quot;Чувство прекрасного&quot; on &quot;job page&quot; page (PASSED : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">click element &quot;Чувство прекрасного&quot; on &quot;job page&quot; page (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">check that checkbox is on (FAILED : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- scenario -->
+        <test-method status="PASS" signature="teardownBrowser()[pri:0, instance:csssr.TestRunner@13a57a3b]" name="teardownBrowser" is-config="true" duration-ms="418" started-at="2018-08-21T23:18:05Z" finished-at="2018-08-21T23:18:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownBrowser -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:csssr.TestRunner@13a57a3b]" name="tearDownClass" is-config="true" duration-ms="4" started-at="2018-08-21T23:18:05Z" finished-at="2018-08-21T23:18:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- csssr.TestRunner -->
+    </test> <!-- Command line test -->
+  </suite> <!-- csssr.TestRunner -->
+</testng-results>
